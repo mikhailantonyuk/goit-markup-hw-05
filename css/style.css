@@ -607,6 +607,7 @@ color: #FFFFFF;
     justify-content: center;
     align-content: center;
     align-items: center;
+    transition: backgroundcolor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover, .footer-soc-link:focus{
     background-color: #2196F3;
