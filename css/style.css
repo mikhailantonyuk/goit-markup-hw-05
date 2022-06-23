@@ -692,6 +692,7 @@ color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 .modal-close-btn{
     position: absolute;
