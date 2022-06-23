@@ -691,11 +691,14 @@ color: #FFFFFF;
 .modal-btn-icon{
     display: block;
     fill: var(--header-color);
-
+    width: 12px;
+    height: 12px;
     
 }
 .modal-close-btn{
-    
+    position: absolute;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 15px;
