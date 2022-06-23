@@ -176,7 +176,7 @@ display: block;
 margin-top: 30px;
 min-width: 200px;
 height: 50px;
-border:1px solid var(--accent-color);
+border:none;
 border-radius: 4px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)  ;
 }
@@ -430,6 +430,10 @@ color: var(--header-tel-color);
 }
 .portfolio-btn-title:not(:first-child){
 margin-left: 8px;
+
+}
+.portfolio-btn-title{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn-title:hover, .portfolio-btn-title:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -448,7 +452,7 @@ background-color:  #F5F4FA;
 cursor: pointer;
 min-width: 30px;
 height: 38px;
-border:1px solid #F5F4FA;
+border:none;
 border-radius: 4px;
 padding-left: 22px;
 padding-right: 22px;
@@ -456,14 +460,12 @@ padding-top: 6px;
 padding-bottom: 6px;
 display: flex;
 align-items: center;
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .portfolio-btn-item:hover, .portfolio-btn-item:focus{
     color: #FFFFFF;
-    background-color: var(--accent-color);
-    border:1px solid var(--accent-color);
-   
+    background-color: var(--accent-color); 
 } 
 .portfolio-item-title{
     font-weight: 700;
@@ -496,9 +498,30 @@ align-items: center;
     background: #FFFFFF;
     box-sizing: border-box;
     border: 1px solid #EEEEEE;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover, .portfolio-list-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-top-wrap{
+    position: relative;
+    display: block;
+}
+.portfolio-top-text{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
 }
 /*-------Footer*/
 .main-footer{
