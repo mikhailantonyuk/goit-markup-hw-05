@@ -258,6 +258,9 @@ letter-spacing: 0.03em;
     justify-content: space-between;;
 }
 .activities-list:last-child{margin-bottom: 0;}
+.activities-item{
+    position: relative;
+}
 .activities-title{
     font-style: normal;
     font-weight: 700;
@@ -267,6 +270,26 @@ letter-spacing: 0.03em;
     color: var(--header-color);
     margin-bottom: 50px;
     text-align: center;
+}
+.activities-top-text{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15 ;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    width: 100%;
+    height: 70px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
 }
 /*---Team---*/
 .team {
@@ -497,15 +520,20 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , color 250ms cu
     margin: 15px;
     background: #FFFFFF;
     box-sizing: border-box;
-    border: 1px solid #EEEEEE;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover, .portfolio-list-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-list-item:hover .portfolio-top-text, .portfolio-list-item:focus.portfolio-top-text{
+transform: translateY(0);
+}
 .portfolio-top-wrap{
     position: relative;
     display: block;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .portfolio-top-text{
     display: block;
@@ -522,6 +550,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , color 250ms cu
     padding-top: 40px;
     padding-bottom: 40px;
     height: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 /*-------Footer*/
 .main-footer{
